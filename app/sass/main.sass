@@ -9,14 +9,17 @@
 	background-color: $accent
 	color: #fff
 
+html, body
+	height: 100%
+	margin: 0
 body
 	font-size: 16px
 	min-width: 320px
 	position: relative
-	line-height: 1.65
+	line-height: 1.78
 	font-family: $default-font
 	overflow-x: hidden
-	color: $text
+	color: $mainTextColor
 	input, textarea
 		border: #666 1px solid
 		outline: none
@@ -24,6 +27,12 @@ body
 			border-color: red
 		&:required:valid
 			border-color: green
+ul
+	list-style: none
+
+.container
+	max-width: 1170px
+	margin: 0 auto
 
 .img-responsive
 	display: block
@@ -35,9 +44,127 @@ body
 .text-center
 	text-align: center
 
-b, strong
-	font-weight: bold
+.h1,.h2,.h3,.h4,.h5,.h6
+	font-family: $headers-font
+	font-weight: normal
+	text-transform: uppercase
+	letter-spacing: 2px
+.h1
+	font-size: 35px
+.text-description
+	margin-top: 40px
+
+.icon-circle
+	padding: 10px
+	background-color: $mainTextColor
+	border-radius: 50%
+	color: $lightTextColor
+	transition: all .3s
+	&--accent,
+	&:hover
+		background-color: $accent
+	&--accent,
+		&:hover
+			text-decoration: none
+			color: $accent
+			background-color: $lightTextColor
 
 
+.overlay
+	position: relative
+	&:after
+		content: ""
+		position: absolute
+		display: block
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+.overlay_dark
+	&:after
+		background-color: rgba(0,0,0,.5)
+.overlay_darker
+	&:after
+		background-color: rgba(0,0,0,.85)
+.overlay_accent
+	&:after
+		background-color: rgba(25,189,154,.85)
+.overlay_light
+	&:after
+		background-color: rgba(255,255,255,.75)
+
+
+/////////////////////HEADER START/////////////
+
+#header
+	background: #000 url(../img/header-bg.jpg) no-repeat center
+	background-size: cover
+	color: $lightTextColor
+.header
+	&-inner
+		padding: 45px 15px 70px
+		height: 100vh
+		position: relative
+		z-index: 1
+.nav-list
+	margin-bottom: 0
+	&__link
+		color: $lightTextColor
+		border: 1px solid transparent
+		border-radius: 20px
+		padding: 10px 20px
+		transition: all .3s
+		&.active,
+		&:hover
+			color: $lightTextColor
+			border: 1px solid $lightTextColor
+			text-decoration: none
+			line-height: 1
+/*sandwich button begin*/
+#nav-toggle
+	display: none
+	z-index: 50
+	span
+		position: absolute
+		right: 0
+		top: 10px
+		z-index: 50
+		cursor: pointer
+		border-radius: 1px
+		height: 5px
+		width: 35px
+		background: white
+		display: block
+		transition: all 500ms ease-in-out
+		&:before
+			top: -10px
+		&:after
+			bottom: -10px
+		&:before,
+		&:after
+			cursor: pointer
+			border-radius: 1px
+			height: 5px
+			width: 35px
+			background: white
+			position: absolute
+			display: block
+			content: ''
+			transition: all 500ms ease-in-out
+	&.active
+		span
+			background-color: transparent
+			&:before,
+			&:after
+				top: 215px
+			&:before
+				transform: rotate(45deg)
+			&:after
+				transform: rotate(-45deg)
+/*sandwich button end*/
+
+
+
+/////////////////////HEADER END/////////////
 
 @import "media" // Always at the end
