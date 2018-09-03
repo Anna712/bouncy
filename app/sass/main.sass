@@ -49,8 +49,38 @@ ul
 	font-weight: normal
 	text-transform: uppercase
 	letter-spacing: 2px
+	color: $titleColor
 .h1
 	font-size: 35px
+	color: $lightTextColor
+
+.section
+	padding-top: 80px
+	padding-bottom: 80px
+
+.s-light
+	background-color: $lightTextColor
+.s-dark
+	background-color: $footerColor
+.s-accent
+	background-color: $accent
+
+.btn
+	display: inline-block
+	font-size: 16px
+	line-height: 1
+	padding: 10px 35px
+	border-radius: 20px
+	transition: all .3s
+
+.btn--dark
+	color: $titleColor
+	border: 1px solid $titleColor
+	&:hover
+		text-decoration: none
+		color: $lightTextColor
+		background-color: $accent
+		border-color: $accent
 .text-description
 	margin-top: 40px
 
@@ -166,5 +196,20 @@ ul
 
 
 /////////////////////HEADER END/////////////
+
+/////////////////////SECTION HELLO START/////////////
+
+#hello
+	.btn
+		margin-top: 50px
+
+ .hello-slider__img
+ 	display: inline-block
+ 	max-width: 100%
+ 	height: auto
+
+
+
+/////////////////////SECTION HELLO END/////////////////
 
 @import "media" // Always at the end

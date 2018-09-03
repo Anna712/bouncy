@@ -9,4 +9,6 @@ $(function() {
 		});
 	});
 	
+	$('.js-hello-slider').carousel();
+
 });
