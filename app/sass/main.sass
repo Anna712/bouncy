@@ -29,6 +29,7 @@ body
 			border-color: green
 ul
 	list-style: none
+	margin: 0
 
 .container
 	max-width: 1170px
@@ -47,12 +48,22 @@ ul
 .h1,.h2,.h3,.h4,.h5,.h6
 	font-family: $headers-font
 	font-weight: normal
-	text-transform: uppercase
-	letter-spacing: 2px
-	color: $titleColor
 .h1
 	font-size: 35px
 	color: $lightTextColor
+.h1,
+.h2
+	text-transform: uppercase
+	letter-spacing: 2px
+.h2
+	color: $titleColor
+	font-size: 20px
+.h3
+	font-size: 20px
+	color: $darkColor
+	font-weight: bold
+	margin-bottom: 40px
+
 
 .section
 	padding-top: 80px
@@ -82,10 +93,14 @@ ul
 		background-color: $accent
 		border-color: $accent
 .text-description
-	margin-top: 40px
+	margin: 40px auto
+	max-width: 500px
+
+.font-sm
+	font-size: 14px
 
 .icon-circle
-	padding: 10px
+	padding: 15px
 	background-color: $mainTextColor
 	border-radius: 50%
 	color: $lightTextColor
@@ -123,7 +138,11 @@ ul
 	&:after
 		background-color: rgba(255,255,255,.75)
 
-
+.bold-text
+	font-weight: bold
+.accent-text
+	color: $accent
+	font-weight: bold
 /////////////////////HEADER START/////////////
 
 #header
@@ -202,14 +221,61 @@ ul
 #hello
 	.btn
 		margin-top: 50px
-
- .hello-slider__img
- 	display: inline-block
- 	max-width: 100%
- 	height: auto
-
-
+.hello-slider__img
+	margin: 0 auto
+	max-width: 100%
+	max-height: 300px
+.hello-left
+	p
+		margin-top: 40px
 
 /////////////////////SECTION HELLO END/////////////////
+
+/////////////////////SECTION ABOUT START/////////////////
+
+.dots-list
+	position: absolute
+	display: flex
+	padding: 0
+	top: -115px
+	left: 50%
+	transform: translateX(-50%)
+	li
+		margin-right: 40px
+		&:last-child
+				margin-right: 0
+		&.slick-active
+			i
+				background-color: $accent
+		&:nth-of-type(1)
+			i
+				&:before
+					content: "\e631"
+		&:nth-of-type(2)
+			i
+				&:before
+					content: "\e642"
+		&:nth-of-type(3)
+			i
+				&:before
+					content: "\e643"
+		i
+			font-size: 35px
+			line-height: 1
+			font-family: Pe-icon-7-stroke
+			font-style: normal
+.js-about-slider
+	margin-top: 175px
+
+
+				
+				
+
+			
+			
+
+
+
+/////////////////////SECTION ABOUT END/////////////////
 
 @import "media" // Always at the end

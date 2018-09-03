@@ -11,18 +11,45 @@ block content
 		.container
 			.row
 				.hello-right.col-12.col-md-4.offset-md-1.order-md-12
-					.js-hello-slider.carousel.slide(data-ride="carousel")
-						.carousel-inner
-							.hello-slider__item.carousel-item.active
-								img(src="img/iPad.png", alt="iPad").hello-slider__img
-							.hello-slider__item.carousel-item
-								img(src="img/smart-cover.png", alt="smart-cover").hello-slider__img
-							.hello-slider__item.carousel-item
-								img(src="img/iMac.png", alt="Mac").hello-slider__img
+					.js-hello-slider
+						.hello-slider__item
+							img(src="img/iPad.png", alt="iPad").hello-slider__img
+						.hello-slider__item
+							img(src="img/smart-cover.png", alt="smart-cover").hello-slider__img
+						.hello-slider__item
+							img(src="img/iMac.png", alt="Mac").hello-slider__img
 				.hello-left.col-12.col-md-6.offset-md-1
 					h2.h2 This is Bouncy
-					p.text-description At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. 
+					p.font-sm At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. 
 					a(href="#").btn.btn--dark Read More
+	section#about.section.s-dark
+		.container
+			.about-top.text-center
+				h2.h2.w-100 Details about bouncy
+				p.text-description At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+			.js-about-slider
+				.slider-item
+					h3.h3 Creative Ideas
+					.row
+						.slider-item__left.col-12.col-md-5
+							p At #[span.accent-text vero] eos et accusamus et iusto odio dignissimos #[span.bold-text ducimus] qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+						.slider-item__right.col-12.col-md-6.offset-md-1
+							p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque #[span.bold-text corrupti quos] dolores et quas molestias #[span.accent-text excepturi] sint occaecati cupiditate non provident, #[span.bold-text similique] sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem r
+				.slider-item
+					h3.h3 Great Design
+					.row
+						.slider-item__left.col-12.col-md-5
+							p  Lorem ipsum dolor #[span.accent-text sit amet], consectetur adipisicing elit. Nihil, dolorum!
+						.slider-item__right.col-12.col-md-6.offset-md-1
+							p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque veniam non consequuntur tenetur deserunt ducimus asperiores provident #[span.bold-text quibusdam facere] rerum corrupti placeat aut commodi itaque minus, ullam debitis, atque ratione?
+				.slider-item
+					h3.h3.m-font Branding
+					.row
+						.slider-item__left.col-12.col-md-5
+							p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. #[span.accent-text Libero assumenda] dolor delectus corporis, totam, suscipit.
+						.slider-item__right.col-12.col-md-6.offset-md-1
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, dolorem, excepturi ad dignissimos quia sit earum. Inventore ullam, #[span.bold-text numquam deserunt obcaecati] iste aperiam voluptates ratione, eveniet, eius perspiciatis et ipsa.
+
 				
 				
 

@@ -8,7 +8,23 @@ $(function() {
 			}
 		});
 	});
-	
-	$('.js-hello-slider').carousel();
+
+	////////////sliders /////////////
+	$('.js-hello-slider').slick({
+		autoplay: true,
+  		infinite: true,
+  		arrows: false
+	});
+
+	$('.js-about-slider').slick({
+		autoplay: true,
+		dots: true,
+		customPaging: function(slider, i) {
+        return '<i class="icon-circle"></i>';
+    		},
+		dotsClass: 'slick-dots dots-list',
+  		infinite: true,
+  		arrows: false
+	});
 
 });
