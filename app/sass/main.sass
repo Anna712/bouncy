@@ -34,6 +34,8 @@ ul
 .container
 	max-width: 1170px
 	margin: 0 auto
+	z-index: 1
+	position: relative
 
 .img-responsive
 	display: block
@@ -168,8 +170,7 @@ ul
 	&-inner
 		padding: 45px 15px 70px
 		height: 100vh
-		position: relative
-		z-index: 1
+		
 .nav-list
 	margin-bottom: 0
 	&__link
@@ -293,8 +294,6 @@ ul
 	background-size: cover
 	padding: 40px 0
 	&__inner
-		position: relative
-		z-index: 10
 		color: $lightTextColor
 		p
 			margin-bottom: 0
@@ -317,8 +316,8 @@ ul
 	position: absolute
 	top: 50%
 	left: 50%
+	z-index: 1
 	transform: translate(-50%, -50%)
-	z-index: 5
 	color: $lightTextColor
 	text-transform: uppercase
 	font-family: $headers-font
@@ -369,5 +368,33 @@ ul
     	line-height: 1
 
 /////////////////////SECTION SERVICES END/////////////////
+
+/////////////////////SECTION QUOTES START/////////////////
+
+#quotes
+	color: $lightColor
+	background: url(../img/quotes_bg.jpg) no-repeat center
+	background-size: cover
+	.h3
+		text-transform: uppercase
+		color: $lightTextColor
+.author-name,
+.author-position
+	text-transform: uppercase
+	display: block
+.author-name
+	font-weight: bold
+.quotes__left
+	.h3+p
+		margin: 80px 0 50px
+.quotes__right
+	position: relative
+	img
+		position: absolute
+		top: -110px
+		right: 0
+
+
+/////////////////////SECTION QUOTES END/////////////////
 
 @import "media" // Always at the end
