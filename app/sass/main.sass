@@ -83,6 +83,7 @@ ul
 	padding: 10px 35px
 	border-radius: 20px
 	transition: all .3s
+	white-space: nowrap
 
 .btn--dark
 	color: $titleColor
@@ -92,12 +93,26 @@ ul
 		color: $lightTextColor
 		background-color: $accent
 		border-color: $accent
+
+.btn--light
+	color: $lightTextColor
+	border: 1px solid $lightTextColor
+	&:hover
+		text-decoration: none
+		color: $accent
+		background-color: $lightTextColor
+		border-color: $accent	
+.mb0
+	margin-bottom: 0
 .text-description
 	margin: 40px auto
 	max-width: 500px
 
 .font-sm
 	font-size: 14px
+
+.font-md
+	font-size: 20px
 
 .icon-circle
 	padding: 15px
@@ -125,16 +140,16 @@ ul
 		left: 0
 		bottom: 0
 		right: 0
-.overlay_dark
+.overlay--dark
 	&:after
 		background-color: rgba(0,0,0,.5)
-.overlay_darker
+.overlay--darker
 	&:after
 		background-color: rgba(0,0,0,.85)
-.overlay_accent
+.overlay--accent
 	&:after
 		background-color: rgba(25,189,154,.85)
-.overlay_light
+.overlay--light
 	&:after
 		background-color: rgba(255,255,255,.75)
 
@@ -267,15 +282,48 @@ ul
 .js-about-slider
 	margin-top: 175px
 
-
-				
-				
-
-			
-			
-
-
-
 /////////////////////SECTION ABOUT END/////////////////
+
+/////////////////////SECTION PROJECTS START/////////////////
+
+#projects
+	padding-bottom: 0
+.projects-bottom
+	background: url(../img/projects_bottom-bg.jpg) no-repeat center
+	background-size: cover
+	padding: 40px 0
+	&__inner
+		position: relative
+		z-index: 10
+		color: $lightTextColor
+		p
+			margin-bottom: 0
+
+.projects-middle
+	display: flex
+.projects-item
+	height: 320px
+	flex: 2
+	transition: all .5s
+	img
+		width: 100%
+		height: 100%
+		overflow: hidden
+	&:hover
+		flex: 3
+		transition: all .5s
+
+.projects-item_title
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	z-index: 5
+	color: $lightTextColor
+	text-transform: uppercase
+	font-family: $headers-font
+	font-weight: normal
+
+/////////////////////SECTION PROJECTS END/////////////////
 
 @import "media" // Always at the end
