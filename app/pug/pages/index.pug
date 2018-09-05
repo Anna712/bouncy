@@ -43,7 +43,7 @@ block content
 						.slider-item__right.col-12.col-md-6.offset-md-1
 							p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque veniam non consequuntur tenetur deserunt ducimus asperiores provident #[span.bold-text quibusdam facere] rerum corrupti placeat aut commodi itaque minus, ullam debitis, atque ratione?
 				.slider-item
-					h3.h3.m-font Branding
+					h3.h3.font-md Branding
 					.row
 						.slider-item__left.col-12.col-md-5
 							p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. #[span.accent-text Libero assumenda] dolor delectus corporis, totam, suscipit.
@@ -95,39 +95,185 @@ block content
 							.services-tabs__item.active
 								h3.h3 Branding
 								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. #[span.accent-text ]Dicta excepturi, ducimus ullam. delectus, reprehenderit totam.
-								p.sm-font Lorem ipsum dolor sit amet, consectetur #[span.accent-text adipisicing elit]. Illum, in. Optio laudantium sit dolores ratione!
+								p.font-sm Lorem ipsum dolor sit amet, consectetur #[span.accent-text adipisicing elit]. Illum, in. Optio laudantium sit dolores ratione!
 							.services-tabs__item
 								h3.h3 Graphic Design
 								p At vero eos et accusamus et #[span.accent-text iusto] odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
-								p.sm-font quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, #[span.accent-text similique sunt] in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. 
+								p.font-sm quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, #[span.accent-text similique sunt] in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. 
 							.services-tabs__item
 								h3.h3 User Interface
 								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, a!
-								p.sm-font  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto incidunt maiores #[span.accent-text quae enim nulla], excepturi quasi eaque dignissimos nisi commodi.
+								p.font-sm  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto incidunt maiores #[span.accent-text quae enim nulla], excepturi quasi eaque dignissimos nisi commodi.
 							.services-tabs__item
 								h3.h3 Hosting
 								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit #[span.accent-text quod culpa] fugit nam! Libero, tempora, explicabo. Maxime refacilis earum. Porro repellat laudantium. Ad, accusantium.
-								p.sm-font  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam beatae iste #[span.accent-text inventore modi] molestias impedit eveniet? Laboriosam.
+								p.font-sm  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam beatae iste #[span.accent-text inventore modi] molestias impedit eveniet? Laboriosam.
 				.col-12.col-md-6.services-bottom__right.align-self-center.text-center
 					.progressbar-item
 						#progressbar1.circle(data-percent="80")
 							strong
-						span.progressbar-item__title.sm-font Branding
+						span.progressbar-item__title.font-sm Branding
 					.progressbar-item
 						#progressbar2.circle(data-percent="70")
 							strong
-						span.progressbar-item__title.sm-font Web Design
+						span.progressbar-item__title.font-sm Web Design
 					.progressbar-item
 						#progressbar3.circle(data-percent="65")
 							strong
-						span.progressbar-item__title.sm-font UI/UX
+						span.progressbar-item__title.font-sm UI/UX
 	section#quotes.section.overlay.overlay--darker
 		.container
 			.row
 				.col-12.col-lg-6.quotes__left
-					h3.h3.m-font Impressed?
+					h3.h3.font-md Impressed?
 					p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
-					span.author-name.sm-font - Abdullah Noman
-					span.author-position.sm-font Creative Director, #[span.accent-text Code Cafe]
+					span.author-name.font-sm - Abdullah Noman
+					span.author-position.font-sm Creative Director, #[span.accent-text Code Cafe]
 				.col.quotes__right
-					img(src="img/iMacBouncy.png", alt="iMac" data-wow-delay=".5s")
+					img(src="img/iMacBouncy.png", alt="iMac")
+	section#portfolio.section.s-dark
+		.container
+			.portfolio-top.text-center
+				h2.h2 The Portfolio
+				p.text-description At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+			.portfolio-middle
+				ul.portfolio-categories.text-center
+					li.portfolio-categories__item.selected
+						a(href="#"	data-category="all" rel="all") All Works
+					li.portfolio-categories__item
+						a(href="#" data-category="print" rel="print") Print
+					li.portfolio-categories__item
+						a(href="#" data-category="identity" rel="identity") Identity
+					li.portfolio-categories__item
+						a(href="#" data-category="branding" rel="branding") Branding
+					li.portfolio-categories__item
+						a(href="#" data-category="web" rel="web") Web
+					li.portfolio-categories__item
+						a(href="#" data-category="html" rel="html") HTML
+					li.portfolio-categories__item
+						a(href="#" data-category="wp" rel="wp") WordPress
+				#gallery(data-columns)
+					div(rel="print").gallery-item
+						img(src="img/gallery/thumb/g1.jpg" alt="Title here" data-category="print").gallery-item__img
+						.gallery-item__hover
+							.gallery-item__hover-inner
+								h4.h4.font-md Title here
+								p.font-sm At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+								a(href="#").gallery-item__link
+									i.icon-circle.icon-circle--dark.pe-7s-link
+								a(href="#").gallery-item__like
+									i.icon-circle.icon-circle--dark.pe-7s-like
+					div(rel="print").gallery-item
+						img(src="img/gallery/thumb/g2.jpg" alt="Title here" data-category="print").gallery-item__img
+						.gallery-item__hover
+							.gallery-item__hover-inner
+								h4.h4.font-md Title here
+								p.font-sm At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+								a(href="#").gallery-item__link
+									i.icon-circle.icon-circle--dark.pe-7s-link
+								a(href="#").gallery-item__like
+									i.icon-circle.icon-circle--dark.pe-7s-like
+					div(rel="print").gallery-item
+						img(src="img/gallery/thumb/g3.jpg" alt="Title here" data-category="print").gallery-item__img
+						.gallery-item__hover
+							.gallery-item__hover-inner
+								h4.h4.font-md Title here
+								p.font-sm At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+								a(href="#").gallery-item__link
+									i.icon-circle.icon-circle--dark.pe-7s-link
+								a(href="#").gallery-item__like
+									i.icon-circle.icon-circle--dark.pe-7s-like
+					div(rel="identity").gallery-item
+						img(src="img/gallery/thumb/g4.jpg" alt="Title here" data-category="identity").gallery-item__img
+						.gallery-item__hover
+							.gallery-item__hover-inner
+								h4.h4.font-md Title here
+								p.font-sm At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+								a(href="#").gallery-item__link
+									i.icon-circle--dark.icon-circle.pe-7s-link
+								a(href="#").gallery-item__like
+									i.icon-circle.icon-circle--dark.pe-7s-like
+					div(rel="identity").gallery-item
+						img(src="img/gallery/thumb/g5.jpg" alt="Title here" data-category="identity").gallery-item__img
+						.gallery-item__hover
+							.gallery-item__hover-inner
+								h4.h4.font-md Title here
+								p.font-sm At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+								a(href="#").gallery-item__link
+									i.icon-circle.icon-circle--dark.pe-7s-link
+								a(href="#").gallery-item__like
+									i.icon-circle.icon-circle--dark.pe-7s-like
+					div(rel="branding").gallery-item
+						img(src="img/gallery/thumb/g6.jpg" alt="Title here" data-category="branding").gallery-item__img
+						.gallery-item__hover
+							.gallery-item__hover-inner
+								h4.h4.font-md Title here
+								p.font-sm At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+								a(href="#").gallery-item__link
+									i.icon-circle.icon-circle--dark.pe-7s-link
+								a(href="#").gallery-item__like
+									i.icon-circle.icon-circle--dark.pe-7s-like
+					div(rel="branding").gallery-item
+						img(src="img/gallery/thumb/g7.jpg" alt="Title here" data-category="branding").gallery-item__img
+						.gallery-item__hover
+							.gallery-item__hover-inner
+								h4.h4.font-md Title here
+								p.font-sm At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+								a(href="#").gallery-item__link
+									i.icon-circle.icon-circle--dark.pe-7s-link
+								a(href="#").gallery-item__like
+									i.icon-circle.icon-circle--dark.pe-7s-like
+					div(rel="web").gallery-item
+						img(src="img/gallery/thumb/g8.jpg" alt="Title here" data-category="web").gallery-item__img
+						.gallery-item__hover
+							.gallery-item__hover-inner
+								h4.h4.font-md Title here
+								p.font-sm At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+								a(href="#").gallery-item__link
+									i.icon-circle.icon-circle--dark.pe-7s-link
+								a(href="#").gallery-item__like
+									i.icon-circle.icon-circle--dark.pe-7s-like
+					div(rel="html").gallery-item
+						img(src="img/gallery/thumb/g9.jpg" alt="Title here" data-category="html").gallery-item__img
+						.gallery-item__hover
+							.gallery-item__hover-inner
+								h4.h4.font-md Title here
+								p.font-sm At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+								a(href="#").gallery-item__link
+									i.icon-circle.icon-circle--dark.pe-7s-link
+								a(href="#").gallery-item__like
+									i.icon-circle.icon-circle--dark.pe-7s-like
+					div(rel="wp").gallery-item
+						img(src="img/gallery/thumb/g10.jpg" alt="Title here" data-category="wp").gallery-item__img
+						.gallery-item__hover
+							.gallery-item__hover-inner
+								h4.h4.font-md Title here
+								p.font-sm At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+								a(href="#").gallery-item__link
+									i.icon-circle.icon-circle--dark.pe-7s-link
+								a(href="#").gallery-item__like
+									i.icon-circle.icon-circle--dark.pe-7s-like
+					div(rel="wp").gallery-item
+						img(src="img/gallery/thumb/g11.jpg" alt="Title here" data-category="wp").gallery-item__img
+						.gallery-item__hover
+							.gallery-item__hover-inner
+								h4.h4.font-md Title here
+								p.font-sm At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+								a(href="#").gallery-item__link
+									i.icon-circle.icon-circle--dark.pe-7s-link
+								a(href="#").gallery-item__like
+									i.icon-circle.icon-circle--dark.pe-7s-like
+					div(rel="branding").gallery-item
+						img(src="img/gallery/thumb/g12.jpg" alt="Title here" data-category="branding").gallery-item__img
+						.gallery-item__hover
+							.gallery-item__hover-inner
+								h4.h4.font-md Title here
+								p.font-sm At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+								a(href="#").gallery-item__link
+									i.icon-circle.icon-circle--dark.pe-7s-link
+								a(href="#").gallery-item__like
+									i.icon-circle.icon-circle--dark.pe-7s-like
+			.portfolio-bottom.overlay.overlay--accent.text-center
+				.portfolio-bottom_inner
+					p.font-md At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
+					a(href="#contact").btn.btn--light Start Project

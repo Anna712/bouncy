@@ -62,6 +62,25 @@ $(function() {
 	$('.services-bottom__right').on('circle-animation-progress', '.circle', function(event, progress) {
 		$(this).find('strong').html(Math.round($(this).data('percent') * progress) + '<span>%</span>');
 		});
+
+/////////GALLERY START////////////////
+
+	$('.portfolio-categories__item a').click(function() {
+		$('.portfolio-categories__item').removeClass('selected');
+		$(this).parent('.portfolio-categories__item').addClass('selected');
+
+		thisItem = $(this).data('rel');
+	if(thisItem != 'all') {
+		$('.gallery-item[rel='+thisItem+']').slideDown(1000);
+		$('.gallery-item[rel!='+thisItem+']').slideUp(1000);
+	} else {
+		$('.gallery-item').slideDown(1000);
+	}
+		return false;
+	});
+	
+/////////GALLERY end////////////////
+
 	////////////sliders /////////////
 	$('.js-hello-slider').slick({
 		autoplay: true,

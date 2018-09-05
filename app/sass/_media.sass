@@ -24,6 +24,10 @@
 			margin: 15px 20px
 	.quotes__right
 		display: none
+
+	#gallery[data-columns]
+		&:before 
+			content: '3 .column.size-1of3'
 // ≥768px
 +media-breakpoint-down(sm)
 	.hello-right
@@ -42,6 +46,11 @@
 			margin-bottom: 20px
 	.projects-item
 		height: 250px
+	#gallery[data-columns]
+		&:before 
+			content: '2 .column.size-1of2'
+	.portfolio-categories__item
+		margin-right: 15px
 
 // ≥576px
 +media-breakpoint-down(xs)
@@ -51,6 +60,18 @@
 	.projects-item
 		margin: 15px auto 0
 		max-width: 250px
+	#gallery[data-columns]
+		&:before 
+			content: '1 .column.size-1of1'
+	.gallery-item
+		width: 290px
+		height: 230px
+		margin: 0 auto
+	.portfolio-categories__item
+		width: 20%
+		margin-bottom: 30px
+	.portfolio-categories
+		margin-bottom: 0
 
 
 /*==========  Mobile First  ==========*/
