@@ -87,7 +87,7 @@ ul
 
 .section--lightBg
 	background-color: $lightTextColor
-.section--darktBg
+.section--darkBg
 	background-color: $footerColor
 .section--accentBg
 	background-color: $accent
@@ -177,10 +177,10 @@ ul
 		left: 0
 		bottom: 0
 		right: 0
-.overlay--dark
+.overlay--darkBg
 	&:after
 		background-color: rgba(0,0,0,.5)
-.overlay--darker
+.overlay--darkerBg
 	&:after
 		background-color: rgba(0,0,0,.85)
 .overlay--accent
@@ -617,5 +617,19 @@ ul
 		margin-bottom: 30px
 
 /////////////////////SECTION TEAM-CTA END/////////////////
+
+/////////////////////SECTION TESTIMONISLS START/////////////////
+
+.testimonials-bottom
+	padding: 50px 0
+	&__left
+		img
+			border-radius: 50%
+			margin-bottom: 20px
+	.slick-dots--accent
+		margin-top: 20px
+
+
+/////////////////////SECTION TESTIMONISLS END/////////////////
 
 @import "media" // Always at the end
