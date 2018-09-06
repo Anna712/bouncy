@@ -7,7 +7,7 @@ block title
 	| Главная страница
 
 block content
-	section#hello.section.s-light
+	section#hello.section.section--lightBg
 		.container
 			.row
 				.hello-right.col-12.col-md-4.offset-md-1.order-md-12
@@ -22,7 +22,7 @@ block content
 					h2.h2 This is Bouncy
 					p.font-sm At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. 
 					a(href="#").btn.btn--dark Read More
-	section#about.section.s-dark
+	section#about.section.section--darktBg
 		.container
 			.about-top.text-center
 				h2.h2.w-100 Details about bouncy
@@ -49,7 +49,7 @@ block content
 							p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. #[span.accent-text Libero assumenda] dolor delectus corporis, totam, suscipit.
 						.slider-item__right.col-12.col-md-6.offset-md-1
 							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, dolorem, excepturi ad dignissimos quia sit earum. Inventore ullam, #[span.bold-text numquam deserunt obcaecati] iste aperiam voluptates ratione, eveniet, eius perspiciatis et ipsa.
-	section#projects.section.s-light
+	section#projects.section.section--lightBg
 		.projects-top.text-center
 			h2.h2 Feautured projects
 			p.text-description At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
@@ -74,7 +74,7 @@ block content
 							p.font-md At vero eos et #[span.bold-text accusamus] et iusto odio dignissimos ducimus qui blanditiis 
 						.col-12.col-md-3.offset-md-1
 							a(href="#contact").btn.btn--light Submit Now
-	section#services.section.s-dark
+	section#services.section.section--darktBg
 		.container
 			.services-top.text-center
 				h2.h2 Feautured projects
@@ -131,7 +131,7 @@ block content
 					span.author-position.font-sm Creative Director, #[span.accent-text Code Cafe]
 				.col.quotes__right
 					img(src="img/iMacBouncy.png", alt="iMac")
-	section#portfolio.section.s-dark
+	section#portfolio.section.section--darktBg
 		.container
 			.portfolio-top.text-center
 				h2.h2 The Portfolio
@@ -277,3 +277,135 @@ block content
 				.portfolio-bottom_inner
 					p.font-md At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
 					a(href="#contact").btn.btn--light Start Project
+	section#team.section.section--lightBg
+		.container
+			.team-top.text-center
+				h2.h2 The Team
+				p.text-description At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+			.team-bottom.js-team-slider
+				.team-slider__item
+					.team-item__inner
+						.row.align-items-center.justify-content-around
+							.col-md-3
+								.team-item__left
+									img(src="img/Noman.jpg", alt="Noman")
+									.team-item__left-hover
+										ul.team-item__icons.social-list
+											li
+												a(href="#")
+													i.icon-social.flaticon-instagram-logo
+											li
+												a(href="#")
+													i.icon-social.flaticon-facebook-logo-button
+											li
+												a(href="#")
+													i.icon-social.flaticon-twitter-logo-button
+							.col-md-5.offset-md-2
+								.team-item__right
+									.author-data
+										span.author-name.m-font Abdullah Noman
+										span.author-position.sm-font Creative Director, Code Cafe
+										p.sm-font At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+									.author-skills
+										.skills-item
+											.skill-header
+												span.skill-title Branding
+												span.skill-num 80 %
+											.progress-bar
+												span(data-skill="80")
+										.skills-item
+											.skill-header
+												span.skill-title Web Design
+												span.skill-num 65 %
+											.progress-bar
+												span(data-skill="65")
+										.skills-item
+											.skill-header
+												span.skill-title User Interface
+												span.skill-num 75 %
+											.progress-bar
+												span(data-skill="75")
+				.team-slider__item
+					.team-item__inner
+						.row.align-items-center.justify-content-around
+							.col-md-3
+								.team-item__left
+									img(src="img/Tuko.jpg", alt="Tuko")
+									.team-item__left-hover
+										ul.team-item__icons.social-list
+											li
+												a(href="#")
+													i.icon-social.flaticon-instagram-logo
+											li
+												a(href="#")
+													i.icon-social.flaticon-facebook-logo-button
+											li
+												a(href="#")
+													i.icon-social.flaticon-twitter-logo-button
+							.col-md-5.offset-md-2
+								.team-item__right
+									.author-data
+										span.author-name.m-font Su Tuko
+										span.author-position.sm-font Developer, Code Cafe
+										p.sm-font  Lorem ipsum dolor sit amet, consectetur. Quae consectetur inventore minima amet voluptatibus odit.
+									.author-skills
+										.skills-item
+											.skill-header
+												span.skill-title Branding
+												span.skill-num 70 %
+											.progress-bar
+												span(data-skill="70")
+										.skills-item
+											.skill-header
+												span.skill-title Web Design
+												span.skill-num 85 %
+											.progress-bar
+												span(data-skill="85")
+										.skills-item
+											.skill-header
+												span.skill-title User Interface
+												span.skill-num 80 %
+											.progress-bar
+												span(data-skill="80")
+				.team-slider__item
+					.team-item__inner
+						.row.align-items-center.justify-content-around
+							.col-md-3
+								.team-item__left
+									img(src="img/Okley.jpg", alt="Okley")
+									.team-item__left-hover
+										ul.team-item__icons.social-list
+											li
+												a(href="#")
+													i.icon-social.flaticon-instagram-logo
+											li
+												a(href="#")
+													i.icon-social.flaticon-facebook-logo-button
+											li
+												a(href="#")
+													i.icon-social.flaticon-twitter-logo-button
+							.col-md-5.offset-md-2
+								.team-item__right
+									.author-data
+										span.author-name.m-font Dan Okley
+										span.author-position.sm-font Designer, Code Cafe
+										p.sm-font  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus qui blanditiis praesentium
+									.author-skills
+										.skills-item
+											.skill-header
+												span.skill-title Branding
+												span.skill-num 78 %
+											.progress-bar
+												span(data-skill="78")
+										.skills-item
+											.skill-header
+												span.skill-title Web Design
+												span.skill-num 95 %
+											.progress-bar
+												span(data-skill="95")
+										.skills-item
+											.skill-header
+												span.skill-title User Interface
+												span.skill-num 65 %
+											.progress-bar
+												span(data-skill="65")

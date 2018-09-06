@@ -81,6 +81,18 @@ $(function() {
 	
 /////////GALLERY end////////////////
 
+
+	$('.progress-bar>span').each(function() {
+		var $elem= $(this);
+		$elem.animate({
+			get width() {return $elem.data('skill') + '%'}
+		}, 2000)
+	    });
+
+
+	
+
+
 	////////////sliders /////////////
 	$('.js-hello-slider').slick({
 		autoplay: true,
@@ -99,7 +111,13 @@ $(function() {
   		arrows: false
 	});
 
-
+	$('.js-team-slider').slick({
+		autoplay: true,
+		arrows: false,
+		dots: true,
+		dotsClass: 'slick-dots slick-dots--accent',
+		speed: 1000
+	});
 
 
 });
