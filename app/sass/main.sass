@@ -848,4 +848,28 @@ input[type="submit"]
 			color: $accent
 /////////////////////SECTION CONTACT-F END/////////////////
 
+/////////////////////SECTION MAP START/////////////////
+
+#map
+	height: 500px
+	.go
+		outline: none
+	iframe
+		height: 500px
+		width: 100%
+		border: none
+.map-find
+	position: absolute
+	z-index: 1
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+.map-find__text
+	text-transform: uppercase
+	color:  $lightTextColor
+	margin-right: 25px
+	white-space: nowrap
+
+/////////////////////SECTION MAP END/////////////////
+
 @import "media" // Always at the end
