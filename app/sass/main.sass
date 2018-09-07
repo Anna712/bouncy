@@ -790,4 +790,37 @@ input[type="submit"]
 
 /////////////////////SECTION SUBSCRIBE END/////////////////
 
+/////////////////////SECTION CONTACT START/////////////////
+.contact-details
+	max-width: 280px
+	a, i
+		&:hover
+			text-decoration: none
+			color: $accent
+.cont-data
+	display: block
+	color: $mainTextColor
+.cont-title
+	display: block
+	text-transform: uppercase
+	color: $darkColor
+	margin-bottom: 30px
+.contact-details__top
+	position: relative
+	i
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		font-size: 50px
+		color: $lightTextColor
+
+.contact-details__bottom
+	background-color: $lightTextColor
+	text-align: center
+	padding-top: 30px
+	padding-bottom: 30px
+
+/////////////////////SECTION CONTACT END/////////////////
+
 @import "media" // Always at the end

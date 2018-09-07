@@ -28,6 +28,8 @@
 	#gallery[data-columns]
 		&:before 
 			content: '3 .column.size-1of3'
+	.contact-details
+		max-width: 220px
 // ≥768px
 +media-breakpoint-down(sm)
 	.hello-right
@@ -82,7 +84,17 @@
 		align-items: center
 		&__item
 			margin-bottom: 15px
-
+	.contact-bottom
+		flex-direction: column
+		align-items: center
+	.contact-details__top
+		padding-bottom: 90px
+		img
+			display: none
+	.contact-details
+		max-width: 280px
+		width: 280px
+		margin-bottom: 15px
 
 // ≥576px
 +media-breakpoint-down(xs)
