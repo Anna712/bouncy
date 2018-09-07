@@ -127,4 +127,12 @@ $(function() {
 		speed: 1000
 	});
 
+	$('.js-blog-slider').slick({
+		autoplay: true,
+		arrows: false,
+		dots: true,
+		dotsClass: 'slick-dots slick-dots--light',
+		speed: 1000
+	});
+
 });
