@@ -704,6 +704,54 @@ ul
 		width: 100%
 		height: 100%
 		border: none
+
 /////////////////////SECTION BLOG END/////////////////
+
+/////////////////////SECTION PRICE START/////////////////
+.price-bottom
+	display: flex
+	justify-content: space-around
+	margin-top: 60px
+.price-bottom__item
+	position: relative
+	width: 230px
+	&:hover
+		.price-bottom__item-hover
+			display: block
+.price-bottom__item-hover
+	display: none
+	position: absolute
+	top: 0
+	right: 0
+	left: 0
+	bottom: 0
+	z-index: 1
+
+.accent-bg 
+	background-color: $accent
+	color: $lightTextColor
+	text-transform: uppercase
+	padding: 30px 0
+	text-align: center
+	a
+		color: $lightTextColor
+
+.light-bg	
+	background-color: $lightTextColor
+	padding: 35px
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	min-height: 240px
+	.pr
+		font-size: 42px
+		font-family: $headers-font
+		white-space: nowrap
+	.text
+		line-height: 2
+	.preferences
+		text-align: left
+/////////////////////SECTION PRICE END/////////////////
 
 @import "media" // Always at the end
