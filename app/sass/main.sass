@@ -7,7 +7,7 @@
 
 ::selection
 	background-color: $accent
-	color: #fff
+	color: #cfd3d4
 
 html, body
 	height: 100%
@@ -753,5 +753,41 @@ ul
 	.preferences
 		text-align: left
 /////////////////////SECTION PRICE END/////////////////
+
+/////////////////////SECTION SUBSCRIBE START/////////////////
+
+#subscribe
+	background: url(../img/subscribe_bg.jpg) no-repeat center
+	background-size: cover
+.subscribe-top
+	.h2
+		color: $lightTextColor
+#subscribe-form
+	input
+		height: 40px
+		width: 100%
+		outline: none
+		color: $lightTextColor
+	input[type="email"]
+		background-color: transparent
+		border: 2px solid $mainTextColor
+		padding-left: 20px
+		&:focus,
+		&:hover
+			outline: none
+			border-color: $accent
+
+input[type="submit"]
+	background-color: $accent
+	border: 2px solid $accent
+	text-transform: uppercase
+	padding: 0 50px
+	cursor: pointer
+	&:hover
+		background-color: transparent
+		color: $accent
+		border-color: $accent
+
+/////////////////////SECTION SUBSCRIBE END/////////////////
 
 @import "media" // Always at the end
