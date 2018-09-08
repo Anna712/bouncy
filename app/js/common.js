@@ -1,5 +1,10 @@
-$(function() {
+// $(window).load(function(){
+//   $('#preloader-wrapper').addClass('hidden');
+// });
 
+
+$(function() {
+	$('#preloader-wrapper').addClass('hidden');
 	$('#nav-toggle').on('click', function() {
 		$(this).toggleClass('active');
 		$('nav ul').slideToggle (300, function(){
@@ -93,7 +98,28 @@ $(function() {
 		event.preventDefault();
 		$('#map').removeClass('overlay overlay--darkerBg')
 	});
+	//////top button////////
 	
+	$('body').append('<a href="#" id="go-top" title="Top">⇧</a>');
+
+	$(function() {
+	 $.fn.scrollToTop = function() {
+	  $(this).hide().removeAttr("href");
+	  if ($(window).scrollTop() >= "250") $(this).fadeIn("slow")
+	  var scrollDiv = $(this);
+	  $(window).scroll(function() {
+	   if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow")
+	   else $(scrollDiv).fadeIn("slow")
+	  });
+	  $(this).click(function() {
+	   $("html, body").animate({scrollTop: 0}, "slow")
+	  })
+	 }
+	});
+
+	$(function() {
+	 $("#go-top").scrollToTop();
+	});
 
 
 	////////////sliders /////////////
