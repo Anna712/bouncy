@@ -415,6 +415,7 @@ ul
 	margin-top: 10px
 	&__item
 		margin-bottom: 15px
+		cursor: pointer
 		&:last-child
 			margin-bottom: 0
 		&.active
@@ -833,6 +834,8 @@ ul
 		&:hover
 			outline: none
 			border-color: $accent
+	.submit
+		width: 100%
 
 input[type="submit"]
 	background-color: $accent
@@ -883,7 +886,8 @@ input[type="submit"]
 /////////////////////SECTION CONTACT-F START/////////////////
 
 #contact-form
-	input,textarea
+	position: relative
+	input,textarea,button[type="submit"]
 		width: 100%
 		border: 1px solid $lightColor
 		outline: none
@@ -895,14 +899,39 @@ input[type="submit"]
 		min-height: 190px
 		margin-bottom: 30px
 	input
-		&:not([type="submit"])
-			margin-bottom: 30px
-			padding-left: 15px
-	input[type="submit"]
-		height: 40px
-		color: $lightTextColor
-		&:hover
-			color: $accent
+		margin-bottom: 30px
+		padding-left: 15px
+.submit
+	cursor: pointer
+	border: inherit
+	outline: none
+	height: 40px
+	color: $lightTextColor
+	background-color: $accent
+	&:hover
+		color: $accent
+		background-color: $lightTextColor
+.success
+	display: none
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	text-transform: uppercase
+	font-weight: bold
+	z-index: 10
+	span
+		margin: auto
+	& ~ *
+		transition: all .5s ease
+	&.active
+		display: flex
+		& ~ *
+			opacity: .5
+			filter: blur(3px)
+
+	
 /////////////////////SECTION CONTACT-F END/////////////////
 
 /////////////////////SECTION MAP START/////////////////

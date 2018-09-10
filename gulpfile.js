@@ -50,6 +50,7 @@ gulp.task('js', function() {
 		'app/libs/slick/slick.min.js',
 		'app/libs/circle-progress.min.js',
 		'app/libs/salvattore.min.js',
+		'app/libs/wow.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(plumber())

@@ -1,11 +1,4 @@
 extends ../layout/main
-block metaKeywords
-	meta(name="keywwords", content="")
-block metaDescription
-	meta(name="description", content="")
-block title
-	| Главная страница
-
 block content
 	section#hello.section.section--lightBg
 		.container
@@ -19,14 +12,14 @@ block content
 						.hello-slider__item
 							img(src="img/iMac.png", alt="Mac").hello-slider__img
 				.hello-left.col-12.col-md-6.offset-md-1
-					h2.h2 This is Bouncy
-					p.font-sm At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. 
-					a(href="#").btn.btn--dark Read More
+					h2.h2.wow.bounceInLeft This is Bouncy
+					p.font-sm.wow.bounceInRight(data-wow-delay=".5s") At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. 
+					a(href="#about" data-wow-delay="1s").btn.btn--dark.wow.zoomIn Read More
 	section#about.section.section--darkBg
 		.container
 			.about-top.text-center
-				h2.h2.w-100 Details about bouncy
-				p.text-description At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+				h2.h2.w-100.wow.bounceInLeft Details about bouncy
+				p.text-description.wow.bounceInRight(data-wow-delay=".5s") At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
 			.js-about-slider
 				.slider-item
 					h3.h3 Creative Ideas
@@ -51,18 +44,18 @@ block content
 							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, dolorem, excepturi ad dignissimos quia sit earum. Inventore ullam, #[span.bold-text numquam deserunt obcaecati] iste aperiam voluptates ratione, eveniet, eius perspiciatis et ipsa.
 	section#projects.section.section--lightBg
 		.projects-top.text-center
-			h2.h2 Feautured projects
-			p.text-description At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+			h2.h2.wow.bounceInLeft Feautured projects
+			p.text-description.wow.bounceInRight(data-wow-delay=".5s") At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
 		.projects-middle
-			.projects-item.overlay.overlay--darkerBg
+			.projects-item.overlay.overlay--darkerBg.wow.zoomIn(data-wow-delay="1.5s")
 				a(href="#")
 					img(src="img/projects-item1.jpg", alt="projects-item1")
 				h3.projects-item_title Design
-			.projects-item.overlay.overlay--darkerBg
+			.projects-item.overlay.overlay--darkerBg.wow.zoomIn(data-wow-delay="2s")
 				a(href="#")
 					img(src="img/projects-item2.jpg", alt="projects-item2")
 				h3.projects-item_title Vintage
-			.projects-item.overlay.overlay--darkerBg
+			.projects-item.overlay.overlay--darkerBg.wow.zoomIn(data-wow-delay="2.5s")
 				a(href="#")
 					img(src="img/projects-item3.jpg", alt="projects-item3")
 				h3.projects-item_title Branding
@@ -73,23 +66,23 @@ block content
 						.col-12.col-md-8
 							p.font-md At vero eos et #[span.bold-text accusamus] et iusto odio dignissimos ducimus qui blanditiis 
 						.col-12.col-md-3.offset-md-1
-							a(href="#contact").btn.btn--light Submit Now
+							a(href="#contact-f").btn.btn--light Submit Now
 	section#services.section.section--darkBg
 		.container
 			.services-top.text-center
-				h2.h2 Feautured projects
-				p.text-description At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+				h2.h2.wow.bounceInLeft Our services
+				p.text-description.wow.bounceInRight(data-wow-delay=".5s") At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
 			.row.services-bottom
 				.col-12.col-md-6.services-bottom__left
 					.row
 						ul.services-icons.col-auto
-							li.services-icons__item.active
+							li.services-icons__item.active.wow.zoomIn
 								i.icon-circle.pe-7s-tools
-							li.services-icons__item
+							li.services-icons__item.wow.zoomIn(data-wow-delay=".5s")
 								i.icon-circle.pe-7s-paint
-							li.services-icons__item
+							li.services-icons__item.wow.zoomIn(data-wow-delay="1s")
 								i.icon-circle.pe-7s-joy
-							li.services-icons__item
+							li.services-icons__item.wow.zoomIn(data-wow-delay="1.5s")
 								i.icon-circle.pe-7s-plug
 						.services-tabs.col
 							.services-tabs__item.active
@@ -109,15 +102,15 @@ block content
 								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit #[span.accent-text quod culpa] fugit nam! Libero, tempora, explicabo. Maxime refacilis earum. Porro repellat laudantium. Ad, accusantium.
 								p.font-sm  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam beatae iste #[span.accent-text inventore modi] molestias impedit eveniet? Laboriosam.
 				.col-12.col-md-6.services-bottom__right.align-self-center.text-center
-					.progressbar-item
+					.progressbar-item.wow.zoomIn(data-wow-delay=".5s")
 						#progressbar1.circle(data-percent="80")
 							strong
 						span.progressbar-item__title.font-sm Branding
-					.progressbar-item
+					.progressbar-item.wow.zoomIn(data-wow-delay="1s")
 						#progressbar2.circle(data-percent="70")
 							strong
 						span.progressbar-item__title.font-sm Web Design
-					.progressbar-item
+					.progressbar-item.wow.zoomIn(data-wow-delay="1.5s")
 						#progressbar3.circle(data-percent="65")
 							strong
 						span.progressbar-item__title.font-sm UI/UX
@@ -125,32 +118,32 @@ block content
 		.container
 			.row
 				.col-12.col-lg-6.quotes__left
-					h3.h3.font-md Impressed?
+					h3.h3.font-md.wow.zoomIn Impressed?
 					p At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
 					span.author-name.font-sm - Abdullah Noman
 					span.author-position.font-sm Creative Director, #[span.accent-text Code Cafe]
 				.col.quotes__right
-					img(src="img/iMacBouncy.png", alt="iMac")
+					img(src="img/iMacBouncy.png", alt="iMac").wow.zoomIn
 	section#portfolio.section.section--darkBg
 		.container
 			.portfolio-top.text-center
-				h2.h2 The Portfolio
-				p.text-description At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+				h2.h2.wow.bounceInLeft The Portfolio
+				p.text-description.wow.bounceInRight(data-wow-delay=".5s") At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
 			.portfolio-middle
 				ul.portfolio-categories.text-center
-					li.portfolio-categories__item.selected
+					li.portfolio-categories__item.selected.wow.zoomIn(data-wow-delay=".5s")
 						a(href="#"	data-category="all" rel="all") All Works
-					li.portfolio-categories__item
+					li.portfolio-categories__item.wow.zoomIn(data-wow-delay="1s")
 						a(href="#" data-category="print" rel="print") Print
-					li.portfolio-categories__item
+					li.portfolio-categories__item.wow.zoomIn(data-wow-delay="1.5s")
 						a(href="#" data-category="identity" rel="identity") Identity
-					li.portfolio-categories__item
+					li.portfolio-categories__item.wow.zoomIn(data-wow-delay="2s")
 						a(href="#" data-category="branding" rel="branding") Branding
-					li.portfolio-categories__item
+					li.portfolio-categories__item.wow.zoomIn(data-wow-delay="2.5s")
 						a(href="#" data-category="web" rel="web") Web
-					li.portfolio-categories__item
+					li.portfolio-categories__item.wow.zoomIn(data-wow-delay="3s")
 						a(href="#" data-category="html" rel="html") HTML
-					li.portfolio-categories__item
+					li.portfolio-categories__item.wow.zoomIn(data-wow-delay="3.5s")
 						a(href="#" data-category="wp" rel="wp") WordPress
 				#gallery(data-columns)
 					div(rel="print").gallery-item
@@ -275,13 +268,13 @@ block content
 									i.icon-circle.icon-circle--dark.pe-7s-like
 			.portfolio-bottom.overlay.overlay--accent.text-center
 				.portfolio-bottom_inner
-					p.font-md At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
-					a(href="#contact").btn.btn--light Start Project
+					p.font-md.wow.bounceInLeft At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
+					a(href="#contact-f").btn.btn--light.wow.bounceInRight(data-wow-delay=".5s") Start Project
 	section#team.section.section--lightBg
 		.container
 			.team-top.text-center
-				h2.h2 The Team
-				p.text-description At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+				h2.h2.wow.bounceInLeft The Team
+				p.text-description.wow.bounceInRight(data-wow-delay=".5s") At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
 			.team-bottom.js-team-slider
 				.team-slider__item
 					.team-item__inner
@@ -411,13 +404,13 @@ block content
 												span(data-skill="65")
 	section#team-cta.section.overlay.overlay--darkerBg
 		.container
-			p.font-md Already Loved Us? Let's talk!
-			a(href="#contact").btn.btn--light Contact Us
+			p.font-md.wow.bounceInLeft Already Loved Us? Let's talk!
+			a(href="#contact").btn.btn--light.wow.bounceInRight(data-wow-delay=".5s") Contact Us
 	section#testimonials.section.section--darkBg
 		.container
 			.testimonials-top.text-center
-				h2.h2 Testimonials
-				p.text-description At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+				h2.h2.wow.bounceInLeft Testimonials
+				p.text-description.wow.bounceInRight(data-wow-delay=".5s") At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
 			.testimonials-bottom.section--lightBg.js-testimonials-slider
 				.testimonials-item
 					.row
@@ -484,10 +477,10 @@ block content
 	section#price.section.section--darkBg
 		.container
 			.price-top.text-center
-				h2.h2.text-description Our Price
-				p.font-sm At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+				h2.h2.text-description.wow.bounceInLeft Our Price
+				p.font-sm.wow.bounceInRight(data-wow-delay=".5s") At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
 			.price-bottom
-				.price-bottom__item
+				.price-bottom__item.wow.zoomIn(data-wow-delay="1s")
 					.price-bottom__item-inner
 						.accent-bg 
 							span.bold-text Premium
@@ -503,7 +496,7 @@ block content
 								li 24/7 h Service
 						.accent-bg 
 							a(href="#contact") Let's Start ▶
-				.price-bottom__item
+				.price-bottom__item.wow.zoomIn(data-wow-delay="1.5s")
 					.price-bottom__item-inner
 						.accent-bg 
 							span.bold-text Standard
@@ -520,7 +513,7 @@ block content
 								li Free Domain
 						.accent-bg 
 							a(href="#contact") Let's Start ▶	
-				.price-bottom__item
+				.price-bottom__item.wow.zoomIn(data-wow-delay="2s")
 					.price-bottom__item-inner
 						.accent-bg 
 							span.bold-text Exclusive
@@ -541,20 +534,20 @@ block content
 	section#subscribe.section.overlay.overlay--darkerBg
 		.container
 			.subscribe-top.text-center
-				h2.h2 Subscribe Us
-				p.text-description At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+				h2.h2.wow.bounceInLeft Subscribe Us
+				p.text-description.wow.bounceInRight(data-wow-delay=".5s") At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
 			form#subscribe-form.row
 				.col-12.col-sm-6.col-md-5.offset-md-2
 					input(type="email" placeholder="Email Address" required)
 				.col-12.col-sm-6.col-md-3
-					input(type="submit" value="Submit").submit
+					button(type="submit").submit Submit
 	section#contact.section.section--darkBg
 		.container
 			.contact-top.text-center
-				h2.h2 Contact Us
-				p.text-description At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+				h2.h2.wow.bounceInLeft Contact Us
+				p.text-description.wow.bounceInRight(data-wow-delay=".5s") At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
 			.contact-bottom.row.justify-content-around
-				.contact-details
+				.contact-details.wow.zoomIn(data-wow-delay="1s")
 					.contact-details__top
 						img(src="img/email_bg.jpg", alt="email").img-responsive
 						a(href="mailto:hello@codecafe.com")
@@ -563,7 +556,7 @@ block content
 						span.cont-title Email
 						a(href="mailto:hello@codecafe.com").cont-data.sm-font hello@codecafe.com
 						a(href="mailto:Personal@codecafe.com").cont-data.sm-font Personal@codecafe.com
-				.contact-details
+				.contact-details.wow.zoomIn(data-wow-delay="1.5s")
 					.contact-details__top
 						img(src="img/map_bg.jpg", alt="map").img-responsive
 						a(href="#map")
@@ -572,7 +565,7 @@ block content
 						span.cont-title Our Office
 						a(href="#map").cont-data.sm-font 240 Bhatikhana, 8200 Barisal
 						span.cont-data.sm-font Bangladesh
-				.contact-details
+				.contact-details.wow.zoomIn(data-wow-delay="2s")
 					.contact-details__top
 						img(src="img/phone_bg.jpg", alt="phone").img-responsive
 						a(href="tel:+001166996644")
@@ -584,6 +577,15 @@ block content
 	section#contact-f.section.section--lightBg
 		.container
 			form#contact-form
+				.success
+					span Thank you for your message!
+				<!-- Hidden Required Fields -->
+				input(type="hidden" name="project_name" value="Site Name")
+				input(type="hidden" name="admin_email" value="admin@mail.com")
+				inpu(type="hidden" name="form_subject" value="Form Subject")
+				<!-- END Hidden Required Fields -->
+
+				input(type="hidden", name="contacts-form")
 				.row
 					.col-sm-4
 						input(type="text" placeholder="Your name" required)
@@ -592,9 +594,9 @@ block content
 					.col-sm-4
 						input(type="text" placeholder="Subject" required)
 				textarea
-				input(type="submit" value="Submit Now" required).submit
+				button(type="submit" required).submit Submit Now
 	section#map.overlay.overlay--darkerBg
 		iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58894.13647543676!2d90.31878474254528!3d22.69537929052147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37553407fbece487%3A0x5d069b9599d4414a!2sBarisal%2C+Bangladesh!5e0!3m2!1sen!2sua!4v1519633400375" allowfullscreen)
 		.map-find
-			span.map-find__text find us on the map
-			a(href="#").icon-circle.icon-circle--accent ▼
+			span.map-find__text.wow.zoomIn find us on the map
+			a(href="#").icon-circle.icon-circle--accent.wow.zoomIn(data-wow-delay=".5s") ▼
