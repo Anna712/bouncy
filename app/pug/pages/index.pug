@@ -132,21 +132,21 @@ block content
 			.portfolio-middle
 				ul.portfolio-categories.text-center
 					li.portfolio-categories__item.selected.wow.zoomIn(data-wow-delay=".5s")
-						a(href="#"	data-category="all" rel="all") All Works
+						a(href="#" data-category="all") All Works
 					li.portfolio-categories__item.wow.zoomIn(data-wow-delay="1s")
-						a(href="#" data-category="print" rel="print") Print
+						a(href="#" data-category="print") Print
 					li.portfolio-categories__item.wow.zoomIn(data-wow-delay="1.5s")
-						a(href="#" data-category="identity" rel="identity") Identity
+						a(href="#" data-category="identity") Identity
 					li.portfolio-categories__item.wow.zoomIn(data-wow-delay="2s")
-						a(href="#" data-category="branding" rel="branding") Branding
+						a(href="#" data-category="branding") Branding
 					li.portfolio-categories__item.wow.zoomIn(data-wow-delay="2.5s")
-						a(href="#" data-category="web" rel="web") Web
+						a(href="#" data-category="web") Web
 					li.portfolio-categories__item.wow.zoomIn(data-wow-delay="3s")
-						a(href="#" data-category="html" rel="html") HTML
+						a(href="#" data-category="html") HTML
 					li.portfolio-categories__item.wow.zoomIn(data-wow-delay="3.5s")
-						a(href="#" data-category="wp" rel="wp") WordPress
+						a(href="#" data-category="wp") WordPress
 				#gallery(data-columns)
-					div(rel="print").gallery-item
+					div(data-category="print").gallery-item
 						img(src="img/gallery/thumb/g1.jpg" alt="Title here" data-category="print").gallery-item__img
 						.gallery-item__hover
 							.gallery-item__hover-inner
@@ -156,7 +156,7 @@ block content
 									i.icon-circle.icon-circle--dark.pe-7s-link
 								a(href="#").gallery-item__like
 									i.icon-circle.icon-circle--dark.pe-7s-like
-					div(rel="print").gallery-item
+					div(data-category="print").gallery-item
 						img(src="img/gallery/thumb/g2.jpg" alt="Title here" data-category="print").gallery-item__img
 						.gallery-item__hover
 							.gallery-item__hover-inner
@@ -166,7 +166,7 @@ block content
 									i.icon-circle.icon-circle--dark.pe-7s-link
 								a(href="#").gallery-item__like
 									i.icon-circle.icon-circle--dark.pe-7s-like
-					div(rel="print").gallery-item
+					div(data-category="print").gallery-item
 						img(src="img/gallery/thumb/g3.jpg" alt="Title here" data-category="print").gallery-item__img
 						.gallery-item__hover
 							.gallery-item__hover-inner
@@ -176,7 +176,7 @@ block content
 									i.icon-circle.icon-circle--dark.pe-7s-link
 								a(href="#").gallery-item__like
 									i.icon-circle.icon-circle--dark.pe-7s-like
-					div(rel="identity").gallery-item
+					div(data-category="identity").gallery-item
 						img(src="img/gallery/thumb/g4.jpg" alt="Title here" data-category="identity").gallery-item__img
 						.gallery-item__hover
 							.gallery-item__hover-inner
@@ -186,7 +186,7 @@ block content
 									i.icon-circle--dark.icon-circle.pe-7s-link
 								a(href="#").gallery-item__like
 									i.icon-circle.icon-circle--dark.pe-7s-like
-					div(rel="identity").gallery-item
+					div(data-category="identity").gallery-item
 						img(src="img/gallery/thumb/g5.jpg" alt="Title here" data-category="identity").gallery-item__img
 						.gallery-item__hover
 							.gallery-item__hover-inner
@@ -196,7 +196,7 @@ block content
 									i.icon-circle.icon-circle--dark.pe-7s-link
 								a(href="#").gallery-item__like
 									i.icon-circle.icon-circle--dark.pe-7s-like
-					div(rel="branding").gallery-item
+					div(data-category="branding").gallery-item
 						img(src="img/gallery/thumb/g6.jpg" alt="Title here" data-category="branding").gallery-item__img
 						.gallery-item__hover
 							.gallery-item__hover-inner
@@ -206,7 +206,7 @@ block content
 									i.icon-circle.icon-circle--dark.pe-7s-link
 								a(href="#").gallery-item__like
 									i.icon-circle.icon-circle--dark.pe-7s-like
-					div(rel="branding").gallery-item
+					div(data-category="branding").gallery-item
 						img(src="img/gallery/thumb/g7.jpg" alt="Title here" data-category="branding").gallery-item__img
 						.gallery-item__hover
 							.gallery-item__hover-inner
@@ -216,7 +216,7 @@ block content
 									i.icon-circle.icon-circle--dark.pe-7s-link
 								a(href="#").gallery-item__like
 									i.icon-circle.icon-circle--dark.pe-7s-like
-					div(rel="web").gallery-item
+					div(data-category="web").gallery-item
 						img(src="img/gallery/thumb/g8.jpg" alt="Title here" data-category="web").gallery-item__img
 						.gallery-item__hover
 							.gallery-item__hover-inner
@@ -226,7 +226,7 @@ block content
 									i.icon-circle.icon-circle--dark.pe-7s-link
 								a(href="#").gallery-item__like
 									i.icon-circle.icon-circle--dark.pe-7s-like
-					div(rel="html").gallery-item
+					div(data-category="html").gallery-item
 						img(src="img/gallery/thumb/g9.jpg" alt="Title here" data-category="html").gallery-item__img
 						.gallery-item__hover
 							.gallery-item__hover-inner
@@ -236,7 +236,7 @@ block content
 									i.icon-circle.icon-circle--dark.pe-7s-link
 								a(href="#").gallery-item__like
 									i.icon-circle.icon-circle--dark.pe-7s-like
-					div(rel="wp").gallery-item
+					div(data-category="wp").gallery-item
 						img(src="img/gallery/thumb/g10.jpg" alt="Title here" data-category="wp").gallery-item__img
 						.gallery-item__hover
 							.gallery-item__hover-inner
@@ -246,7 +246,7 @@ block content
 									i.icon-circle.icon-circle--dark.pe-7s-link
 								a(href="#").gallery-item__like
 									i.icon-circle.icon-circle--dark.pe-7s-like
-					div(rel="wp").gallery-item
+					div(data-category="wp").gallery-item
 						img(src="img/gallery/thumb/g11.jpg" alt="Title here" data-category="wp").gallery-item__img
 						.gallery-item__hover
 							.gallery-item__hover-inner
@@ -256,7 +256,7 @@ block content
 									i.icon-circle.icon-circle--dark.pe-7s-link
 								a(href="#").gallery-item__like
 									i.icon-circle.icon-circle--dark.pe-7s-like
-					div(rel="branding").gallery-item
+					div(data-category="branding").gallery-item
 						img(src="img/gallery/thumb/g12.jpg" alt="Title here" data-category="branding").gallery-item__img
 						.gallery-item__hover
 							.gallery-item__hover-inner
@@ -537,6 +537,16 @@ block content
 				h2.h2.wow.bounceInLeft Subscribe Us
 				p.text-description.wow.bounceInRight(data-wow-delay=".5s") At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
 			form#subscribe-form.row
+				.subscribe-form__success.success
+					span Thank you. You have been successfully subscribed!
+
+				<!-- Hidden Required Fields -->
+				input(type="hidden" name="project_name" value="Bouncy")
+				input(type="hidden" name="admin_email" value="admin@mail.com")
+				input(type="hidden" name="form_subject" value="From Subscribe Form")
+				<!-- END Hidden Required Fields -->
+
+				input(type="hidden", name="subscribe-form")
 				.col-12.col-sm-6.col-md-5.offset-md-2
 					input(type="email" placeholder="Email Address" required)
 				.col-12.col-sm-6.col-md-3
@@ -573,16 +583,16 @@ block content
 					.contact-details__bottom
 						span.cont-title Phone
 						a(href="tel:+001166996644").cont-data.sm-font +00 11 66 99 66 44
-							a(href="tel:+11996644065").cont-data.sm-font +11 99 66 44 065
+						a(href="tel:+11996644065").cont-data.sm-font +11 99 66 44 065
 	section#contact-f.section.section--lightBg
 		.container
 			form#contact-form
-				.success
+				.contact-form__success.success
 					span Thank you for your message!
 				<!-- Hidden Required Fields -->
-				input(type="hidden" name="project_name" value="Site Name")
+				input(type="hidden" name="project_name" value="Bouncy")
 				input(type="hidden" name="admin_email" value="admin@mail.com")
-				inpu(type="hidden" name="form_subject" value="Form Subject")
+				input(type="hidden" name="form_subject" value="From Contacts Form")
 				<!-- END Hidden Required Fields -->
 
 				input(type="hidden", name="contacts-form")
@@ -594,7 +604,7 @@ block content
 					.col-sm-4
 						input(type="text" placeholder="Subject" required)
 				textarea
-				button(type="submit" required).submit Submit Now
+				button(type="submit").submit Submit Now
 	section#map.overlay.overlay--darkerBg
 		iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58894.13647543676!2d90.31878474254528!3d22.69537929052147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37553407fbece487%3A0x5d069b9599d4414a!2sBarisal%2C+Bangladesh!5e0!3m2!1sen!2sua!4v1519633400375" allowfullscreen)
 		.map-find
